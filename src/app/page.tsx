@@ -1,30 +1,25 @@
+"use client"
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+
+const router = useRouter();
+
+const navigateToGridbaseFitness = () => {
+  router.push('/GridbaseFitness');
+};
+
   return (
     <main className={styles.main}>
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          
-        </a>
-      </div>
+    <div className={styles.centeredContent} > 
+      <h1>Welcome to Rose Network Hub</h1>
+      <button onClick={navigateToGridbaseFitness}>GridBase Fitness</button>
+    </div>
+    
+
     </main>
   );
 }
