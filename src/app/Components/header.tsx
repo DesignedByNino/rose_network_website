@@ -11,14 +11,12 @@ const Header: React.FC = () => {
 
   return (
     <header className={styles.header}>
-
-      <nav className={styles.nav}>
-      <button className={styles.navLink} onClick={() => navigate('/')}>Home</button>
-      <button  onClick={() => navigate('/about')}>About</button>
-      <button onClick={() => navigate('/pricing')}>Pricing</button>
-      <button onClick={() => navigate('/signin')}>Sign In</button>
+      <nav className={`${styles.nav} ${styles.navLink}`}>
+        <button onClick={() => navigate('/')}>Home</button>
+        <button onClick={() => navigate('/about')}>About</button>
+        <button onClick={() => navigate('/pricing')}>Pricing</button>
+        <button onClick={() => navigate('/signin')}>Sign In</button>
       </nav>
-      
     </header>
   );
 };

@@ -8,44 +8,54 @@
   background-color: #141210;
   padding: 10px 20px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end; /* Aligns the items to the end (right) */
   align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
 .header button {
-  padding: 10px 40px;
-  border-radius: 40px; /* Adjusted for more rounded corners */
-  background-color: black;
+  margin: 0 10px; /* Adds horizontal margin to space out buttons */
+  padding: 10px 20px;
+  border: none; /* Removes border */
+  outline: none; /* Removes focus outline */
+  border-radius: 30px; /* Adjusted for more rounded corners */
+  background-color: #1a1a1a; /* Darker background color for buttons */
   color: #ffffff;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Adds transition for background, color, and transform */
+  cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
 .header button:hover {
-
-  color: #ffffff;
+  background-color: #292929; /* Lighter background on hover */
+  transform: translateY(-2px); /* Slightly lifts the button on hover */
 }
 
 .nav {
   display: flex;
-  gap: 20px;
+  gap: 10px; /* Adds spacing between buttons */
 }
 
 .navLink {
+  margin: 0 10px; /* Adds horizontal margin to space out buttons */
   padding: 10px 20px;
-  border-radius: 30px;  /* Adjusted for more rounded corners */
-  background-color: red;
+  border: none; /* Removes border */
+  outline: none; /* Removes focus outline */
+  border-radius: 30px; /* Adjusted for more rounded corners */
+  background-color: #ff4500; /* Bright background color for buttons */
   color: #ffffff;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s; /* Transition effect for color */
+  transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Adds transition for background, color, and transform */
+  cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
 .navLink:hover {
-  background-color: #29231f;
-  color: #00ff37; /* Hover text color */
+  background-color: #ff5733; /* Slightly different color on hover */
+  transform: translateY(-2px); /* Slightly lifts the button on hover */
 }
 
 .active {
   background-color: #c06014;
   color: #ff7e34; /* Active text color */
+  transform: translateY(-2px); /* Lifts the button to indicate it's active */
 }
