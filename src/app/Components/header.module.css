@@ -42,7 +42,6 @@
   border: none; /* Removes border */
   outline: none; /* Removes focus outline */
   border-radius: 30px; /* Adjusted for more rounded corners */
-  background-color: #ff4500; /* Bright background color for buttons */
   color: #ffffff;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Adds transition for background, color, and transform */
