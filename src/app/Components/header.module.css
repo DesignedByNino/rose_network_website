@@ -19,7 +19,7 @@
   border: none; /* Removes border */
   outline: none; /* Removes focus outline */
   border-radius: 30px; /* Adjusted for more rounded corners */
-  background-color: #1a1a1a; /* Darker background color for buttons */
+  background-color: #9dd44f; /* Darker background color for buttons */
   color: #ffffff;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Adds transition for background, color, and transform */
